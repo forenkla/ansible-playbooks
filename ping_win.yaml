@@ -3,5 +3,5 @@
   hosts: all
   tasks:
   - name: Log into the server and check that the ping modules returns output
-    ansible.windows.win_ping:
+    win_ping:
       data: win-pong from Ansible
