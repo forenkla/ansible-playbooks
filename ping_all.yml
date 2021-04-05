@@ -1,0 +1,14 @@
+---
+- name: Check if a Linux server is alive
+  hosts: linux
+  tasks:
+  - name: Log into the server and check that the ping modules returns output
+    ping:
+      data: pong from Ansible
+
+- name: Check if a Window server is alive
+  hosts: windows
+  tasks:
+  - name: Log into the server and check that the ping modules returns output
+    ansible.windows.win_ping:
+            data: win-pong from Ansible

@@ -1,0 +1,5 @@
+[linux]
+linux_srv5	ansible_host=localhost
+
+[windows]
+win_srv10	ansible_host=192.168.1.5 ansible_winrm_transport=basic ansible_connection=winrm ansible_user=user ansible_password=winrm ansible_winrm_server_cert_validation=ignore
