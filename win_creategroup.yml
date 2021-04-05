@@ -1,6 +1,8 @@
-- name: Create a new group
-  ansible.windows.win_group:
-    name: deploy
-    description: Deploy Group
-    state: present
-
+- name: New group in Windows
+  hosts: all
+  tasks:
+  - name: Create a new group
+    ansible.windows.win_group:
+      name: "{{ group_name }}"
+      description: "{{ group_desc }}"
+      state: present
