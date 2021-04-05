@@ -2,7 +2,7 @@
   hosts: all
   tasks:
   - name: Create a new group
-    ansible.windows.win_group:
+    win_group:
       name: "{{ group_name }}"
       description: "{{ group_desc }}"
       state: present
