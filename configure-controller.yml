@@ -5,6 +5,6 @@
   gather_facts: false
   tasks:
   - name: Create an inventory
-    awx.awx.inventory:
+    ansible.controller.inventory:
       name: AWX inventory
       organization: Default
